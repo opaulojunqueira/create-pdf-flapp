@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FarmLog App - Documentação</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      background-color: #eef5f3;
+      font-family: 'Roboto', sans-serif;
+    }
+    .container-document {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+    .header {
+      background-color: #4CAF50;
+      padding: 30px 20px;
+      color: #fff;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin-bottom: 0;
+    }
+    .content {
+      margin-top: 20px;
+    }
+    .table-container {
+      margin-top: 20px;
+    }
+    .table {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .footer {
+      background-color: #4CAF50;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+      margin-top: 20px;
+    }
+    .footer p {
+      margin-bottom: 0;
+    }
+    .weather-table {
+      margin-top: 20px;
+    }
+    .highlight-today,
+    .highlight-today td {
+      background-color: #d9d9d9 !important;
+    }
+    .img-container {
+      text-align: center;
+    }
+    .img-container img {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .text-container {
+      text-align: left;
+    }
+    .caption {
+      font-style: italic;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-document">
+    <div class="header">
+      <h1>FarmLog App</h1>
+    </div>
+
+    <div class="content">
+      <div class="img-container">
+        <img src="https://opresenterural.com.br/wp-content/uploads/2022/05/soja.jpeg" alt="Imagem de Soja" class="img-fluid rounded">
+        <div class="caption">
+          Latitude: -23.4321, Longitude: -51.9876 --- Fazenda São João
+        </div>
+        <br>
+        <div class="text-container">
+          <p>Ao realizar a análise na área de cultivo de soja, foi possível obter informações detalhadas sobre o ambiente agrícola. A região, caracterizada por coordenadas geográficas específicas, revela um solo complexo e diversificado.</p>
+          <p>Os resultados das análises indicam um solo predominantemente argiloso, com um pH equilibrado de 6.5 e níveis de umidade estabilizados em 25%. Essa composição é altamente favorável para o cultivo de soja, proporcionando uma base rica em nutrientes essenciais.</p>
+          <p>A visita técnica, conduzida como parte do protocolo agronômico, envolveu a avaliação minuciosa do terreno do talhão da fazenda. O solo, de excelente qualidade, apresentou condições ideais para o plantio de soja, destacando-se pela textura e pela capacidade de retenção de umidade.</p>
+          <p>Essas descobertas promissoras indicam um ambiente propício para o cultivo saudável da soja, proporcionando uma perspectiva otimista para a próxima safra.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2 class="mb-3">Registros</h2>
+        <p>O FarmLog App registra informações cruciais sobre o cultivo na fazenda, proporcionando dados valiosos para a tomada de decisões. Abaixo estão alguns dos principais registros:</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Monitoramento constante da umidade do solo.</li>
+          <li><i class="fas fa-check-circle"></i> Análise do pH do solo para garantir condições ideais.</li>
+          <li><i class="fas fa-check-circle"></i> Registros de cultivos anteriores e suas respectivas safras.</li>
+          <li><i class="fas fa-check-circle"></i> Acompanhamento do uso de fertilizantes e nutrientes.</li>
+          <li><i class="fas fa-check-circle"></i> Histórico climático para entender impactos nas plantações.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-container mt-4">
+      <table class="table table-striped table-bordered rounded">
+        <!-- Tabela com informações de solo -->
+        <thead>
+          <tr>
+            <th scope="col">Tipo de Solo</th>
+            <th scope="col">Informações Técnicas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Solo Argiloso</td>
+            <td>
+              <p>Ph: 6.5, Umidade: 25%</p>
+              <p>
+                <i class="fas fa-info-circle"></i> Rica em nutrientes
+                <i class="fas fa-check-circle"></i> Adequada para cultivo de vegetais
+                <i class="fas fa-sun"></i> Retém bem a umidade
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Solo Arenoso</td>
+            <td>
+              <p>Ph: 7.2, Umidade: 15%</p>
+              <p>
+                <i class="fas fa-info-circle"></i> Drenagem rápida
+                <i class="fas fa-check-circle"></i> Adequado para cultivo de cactos
+                <i class="fas fa-sun"></i> Baixa retenção de umidade
+              </p>
+            </td>
+          </tr>
+          <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="weather-table mt-4">
+      <h2 class="mb-3">Previsão do Tempo em Londrina</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered rounded">
+          <!-- Tabela de previsão do tempo fictícia -->
+          <thead>
+            <tr>
+              <th scope="col" class="highlight-today">Hoje</th>
+              <th scope="col">Amanhã</th>
+              <th scope="col">Depois de Amanhã</th>
+              <th scope="col">Quarta-feira</th>
+              <th scope="col">Quinta-feira</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="fas fa-sun"></i>
+                <br>
+                <strong>Ensolarado</strong>
+                <br>
+                <strong>Temperatura:</strong> 25°C
+                <br>
+                <strong>Chuva:</strong> 10%
+                <br>
+                <strong>Vento:</strong> 15 km/h
+              </td>
+              <td>
+                <i class="fas fa-cloud-sun"></i>
+                <br>
+                <strong>Parcialmente Nublado</strong>
+                <br>
+                <strong>Temperatura:</strong> 23°C
+                <br>
+                <strong>Chuva:</strong> 20%
+                <br>
+                <strong>Vento:</strong> 12 km/h
+              </td>
+              <td>
+                <i class="fas fa-cloud-rain"></i>
+                <br>
+                <strong>Chuva</strong>
+                <br>
+                <strong>Temperatura:</strong> 22°C
+                <br>
+                <strong>Chuva:</strong> 50%
+                <br>
+                <strong>Vento:</strong> 18 km/h
+              </td>
+              <td>
+                <i class="fas fa-sun"></i>
+                <br>
+                <strong>Ensolarado</strong>
+                <br>
+                <strong>Temperatura:</strong> 24°C
+                <br>
+                <strong>Chuva:</strong> 15%
+                <br>
+                <strong>Vento:</strong> 14 km/h
+              </td>
+              <td>
+                <i class="fas fa-cloud"></i>
+                <br>
+                <strong>Nublado</strong>
+                <br>
+                <strong>Temperatura:</strong> 20°C
+                <br>
+                <strong>Chuva:</strong> 30%
+                <br>
+                <strong>Vento:</strong> 10 km/h
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer mt-4">
+      <p>&copy; 2024 FarmLog App. Todos os direitos reservados.</p>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
